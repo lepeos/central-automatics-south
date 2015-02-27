@@ -10,6 +10,7 @@ $(document).ready(function () {
 		auto: true,
 		controls: true,
 		responsive: true,
+		adaptiveHeight: true,
 		infiniteLoop: true,
 		slideWidth: 1000,
 		slideHeight: 500,

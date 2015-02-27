@@ -40,7 +40,6 @@ display: block;
 /*Little 'about me bit'*/
 
 .about {
-position: relative;
 margin-top: 2%;
 text-align: center;
 background-color: #222;
@@ -53,7 +52,7 @@ display: block;
 .about p {
 font-family: 'Open Sans', sans-serif;
 color: #FFF;
-font-size: 0.8rem;
+font-size: 0.6rem;
 padding: 2%;
 margin-bottom: 15px;
 }
@@ -97,7 +96,7 @@ margin-bottom: 15px;
 .icon_image {
 	border: white solid 2px;
 	width: 100%;
-	height: 80px;
+	height: 100%;
 	color: #EEE;
 	background-color: #222;
 }
@@ -133,7 +132,7 @@ margin-bottom: 15px;
 
 .address {
 
-	width: 45%;
+	width: 40%;
 	margin-left: 5%;
 }
 
@@ -146,4 +145,90 @@ text-align: center;
 font-size: 0.6rem;
 }
 
+
+/***************** TABLETS *********************/
+
+@media only screen and (min-width: 600px) {
+
+
+.about {
+
+	background-color: orange;
+
+}
+
+
+
+
+.contactUs {
+	padding-top: 1%;
+}
+
+
+}
+
+
+/***************** DESKTOP *********************/
+
+@media only screen and (min-width: 900px) {
+
+	/*Logo*/
+
+	.logo {
+		text-align: center;
+	}
+
+	.logo img {
+		width: 75%;
+	}
+
+
+	/*About bit*/
+
+	.about {
+		width: 75%;
+		text-align: center;
+		margin: 0 auto;
+	}
+
+	.about p {
+		font-size: 0.9rem;
+	}
+
+
+	/*The icons*/
+
+	.whatWeDo {
+		width: 75%;
+		margin: 0 auto;
+	}
+
+	.icon {
+		width: 20%;
+	}
+
+
+
+	/*Slideshow*/
+
+	.slideWrapper {
+		width: 78.5%;
+		margin: 0 auto;
+	}
+
+
+	.contactUs {
+
+	width: 75%;
+	margin: 0 auto;
+	}
+
+	.number {
+		width: 100%;
+		text-align: left;
+		margin-left: 5%;
+	}
+
+
+}
 
