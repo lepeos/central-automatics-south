@@ -4,13 +4,13 @@ $(document).ready(function () {
 
 	//slideshow controls.
 
-	$('.slideshow').bxSlider({
+	$('.slidershow').bxSlider({
 		mode: 'fade',
 		captions: true,
 		auto: true,
 		controls: true,
 		responsive: true,
-		adaptiveHeight: true,
+		adaptiveHeight: false,
 		infiniteLoop: true,
 		slideWidth: 1000,
 		slideHeight: 500,
@@ -20,8 +20,6 @@ $(document).ready(function () {
 
 
 	//The controls for the buttons at the bottom.
-
-	slider = $('slidershow').bxSlider();
 
 
 
