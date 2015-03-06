@@ -17,9 +17,14 @@ html, body {
 	max-height: 100%;
 }
 
+a {
+	text-decoration: none;
+	color: white;
+}
+
 
 p {
-font-family: 'Open Sans', sans-serif;
+font-family: 'Avenir', 'Open Sans', sans-serif;
 }
 
 
@@ -28,7 +33,7 @@ font-family: 'Open Sans', sans-serif;
 
 .logo {
 width: 100%;
-margin-top: 30px;
+margin-top: 1%;
 display: block;
 }
 
@@ -44,7 +49,7 @@ margin-top: 2%;
 text-align: center;
 background-color: #202F40;
 width: 100%;
-font-family: 'Open Sans', sans-serif;
+font-family: 'Avenir', 'Open Sans', sans-serif;
 display: block;
 }
 
@@ -62,15 +67,15 @@ margin-bottom: 15px;
 	right: 20px;
 	height: 200px;
 	text-align: left;
-
 }
 
 
 
 /*The slideshow*/
 
-.slidershow{
+.slideWrapper{
 	width: 100%;
+	display: none;
 }
 
 
@@ -83,11 +88,18 @@ margin-bottom: 15px;
 }
 
 .whatWeDo h2 {
-	margin-top: 10%;
-	padding-top: 5%;
+	display: inline-block;
 	font-size: 1rem;
-	color: #EEE;
 	letter-spacing: 0.6rem;
+	font-family: 'Avenir', sans-serif;
+	border: 3px solid white;
+	border-radius: 15px;
+	margin: 0 auto;
+	margin-bottom: 2%;
+	margin-top: 5%;
+	background-color: white;
+	color: #202F40;
+	width: 85%;
 }
 
 .icon {
@@ -107,9 +119,12 @@ margin-bottom: 15px;
 .icon_text {
 	color: #EEE;
 	text-align: center;
-	font-size: 0.8rem;
+	font-size: 0.7rem;
+	font-family: 'Courier', serif;
+	letter-spacing: 0.1em;
 
 }
+
 
 
 /*Contact Us section*/
@@ -120,25 +135,57 @@ margin-bottom: 15px;
 	width: 100%;
 	background-color: #202F40;
 	color: #EEE;
-	margin-top: 3%;
-	padding-top: 3%
+	margin-top: 2%;
+	padding-top: 3%;
+	height: 100%;
+
 }
 
 .contact {
 	text-align: center;
+	font-size: 1rem;
+	letter-spacing: 0.6rem;
+	font-family: 'Avenir', sans-serif;
+	border: 3px solid white;
+	border-radius: 15px;
+	margin: 0 auto;
+	margin-bottom: 5%;
+	margin-top: 2%;
+	background-color: white;
+	color: #202F40;
+	width: 90%;
 }
 
-.number {
+.numberDiv {
 	display: inline-block;
-	width: 49%;
-	text-align: center;
+	width: 40%;
+	margin: 0;
+	margin-left: 5%;
+	text-align: left;
+	padding: 0;
+
+}
+
+.numberDiv p {
+	display: inline-block;
+	width: 100%;
+	text-align: right;
+	font-size: 0.8rem;
 }
 
 
-.address{
 
-	width: 40%;
+
+.addressDiv{
+	display: inline-block;
+	width: 43%;
+	margin-right: 0;
 	margin-left: 5%;
+}
+
+.address {
+	margin: 0;
+	font-size: 0.8rem;
 }
 
 
@@ -148,7 +195,23 @@ margin-bottom: 15px;
 
 text-align: center;
 font-size: 0.6rem;
+width: 50%;
+border: 3px solid white;
+border-radius: 5px;
+margin: 0 auto;
+margin-bottom: 5%;
+margin-top: 5%;
+background-color: white;
+color: #202F40;
 }
+
+.peos a{
+	color: #202F40;
+}
+
+
+
+
 
 
 /***************** TABLETS *********************/
@@ -162,7 +225,7 @@ font-size: 0.6rem;
 }
 
 .whatWeDo h2{
-	font-size: 1.3rem;
+	font-size: 1.4rem;
 }
 
 .icon {
@@ -174,9 +237,48 @@ font-size: 0.6rem;
 	height: 80%;
 }
 
+.icon_text {
+	font-size: 0.8rem;
+}
+
 .contactUs {
 	padding-top: 1%;
 }
+
+.contact {
+	font-size: 1.4rem;
+}
+
+.slideWrapper {
+	display: block;
+}
+
+.address {
+	font-size: 1rem;
+}
+
+.numberDiv p {
+	font-size: 1rem;
+}
+
+.numberDiv {
+		margin-left: 5%;
+}
+
+.peos {
+	width: 25%;
+	margin-bottom: 2%;
+}
+
+
+
+/*#map-canvas {
+
+	display: inline-block;
+	top: 50%;
+	width: 30%;	
+	height: 150px;
+}*/
 
 
 }
@@ -186,39 +288,43 @@ font-size: 0.6rem;
 
 @media only screen and (min-width: 900px) {
 
-	/*Logo*/
+/*Logo*/
 
-	.logo {
-		text-align: center;
-	}
+.logo {
+	text-align: center;
+}
 
-	.logo img {
-		width: 75%;
-	}
-
-
-	/*About bit*/
-
-	.about {
-		width: 75%;
-		text-align: center;
-		margin: 0 auto;
-	}
-
-	.about p {
-		font-size: 0.9rem;
-	}
+.logo img {
+	width: 75%;
+}
 
 
-	/*The icons*/
+/*About bit*/
 
-	.whatWeDo {
-		width: 75%;
-		margin: 0 auto;
-	}
+.about {
+	width: 75%;
+	text-align: center;
+	margin: 0 auto;
+}
 
-	.icon {
-	width: 25%;
+.about p {
+	font-size: 0.9rem;
+}
+
+
+/*The icons*/
+
+.whatWeDo {
+	width: 75%;
+	margin: 0 auto;
+}
+
+.whatWeDo h2 {
+	width: 75%;
+}
+
+.icon {
+width: 25%;
 }
 
 .icon_image {
@@ -229,25 +335,27 @@ font-size: 0.6rem;
 
 
 
-	/*Slideshow*/
+/*Slideshow*/
 
-	.slideWrapper {
-		width: 78.5%;
-		margin: 0 auto;
-	}
-
-
-	.contactUs {
-
-	width: 75%;
+.slideWrapper {
+	width: 78.5%;
 	margin: 0 auto;
-	}
+}
 
-	.number {
-		width: 100%;
-		text-align: left;
-		margin-left: 5%;
-	}
+
+.contactUs {
+
+width: 75%;
+margin: 0 auto;
+}
+
+.numberDiv {
+	display: inline-block;
+	text-align: right;
+	margin-top: 0;
+}
+
+
 
 
 }

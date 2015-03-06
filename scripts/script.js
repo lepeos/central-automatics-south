@@ -10,27 +10,44 @@ $(document).ready(function () {
 		auto: true,
 		controls: true,
 		responsive: true,
-		adaptiveHeight: false,
+		adaptiveHeight: true,
 		infiniteLoop: true,
-		slideWidth: 1000,
+		slideWidth: 1500,
 		slideHeight: 500,
 		touchEnabled: true,
 
 	});
 
 
-	//The controls for the buttons at the bottom.
+	//Map
+// function initialize() {
+//     var mapCanvas = document.getElementById('map-canvas');
+//     var myLatLng = new google.maps.LatLng(55.9128254, -3.1661612);
+//     var mapOptions = {
+//       center: myLatLng,
+//       zoom: 15,
+//       mapTypeId: google.maps.MapTypeId.ROADMAP
+//     };
 
 
 
-function initialize() {
-        var mapOptions = {
-          center: { lat: -34.397, lng: 150.644},
-          zoom: 8
-        };
-        var map = new google.maps.Map(document.getElementById('map'),
-            mapOptions);
-      }
-      google.maps.event.addDomListener(window, 'load', initialize);
+
+//     var map = new google.maps.Map(mapCanvas, mapOptions);
+
+
+//     var marker = new google.maps.Marker({
+// 	position: myLatLng,
+// 	animation: google.maps.Animation.DROP,
+// 	map: map,
+// 	title: 'Central-Automatics South.'
+//     });
+//   }
+
+// google.maps.event.addDomListener(window, 'load', initialize);
 
 });
+
+
+
+
+
